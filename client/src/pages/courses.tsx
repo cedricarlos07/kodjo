@@ -42,7 +42,7 @@ interface Course {
   duration: number | null;
 }
 
-export default function Courses() {
+export function Courses() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [createDialogOpen, setCreateDialogOpen] = useState(false);
   const [editCourse, setEditCourse] = useState<Course | null>(null);
