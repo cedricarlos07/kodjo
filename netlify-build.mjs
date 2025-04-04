@@ -32,6 +32,15 @@ try {
   console.log('Installing missing dependencies...');
   execSync('npm install @tanstack/react-table react-countup jspdf jspdf-autotable file-saver --legacy-peer-deps', { stdio: 'inherit' });
 
+  // Mettre à jour les données de browserslist
+  console.log('Updating browserslist database...');
+  try {
+    execSync('npx update-browserslist-db@latest', { stdio: 'inherit' });
+    console.log('Browserslist database updated successfully');
+  } catch (error) {
+    console.warn('Warning: Failed to update browserslist database, but continuing build:', error.message);
+  }
+
   // Exécuter le build du client avec Vite
   console.log('Building client with Vite...');
   execSync('npx vite build', { stdio: 'inherit' });

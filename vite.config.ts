@@ -38,7 +38,9 @@ export default defineConfig({
             warning.message.includes('@tanstack/react-table') ||
             warning.message.includes('jspdf') ||
             warning.message.includes('jspdf-autotable') ||
-            warning.message.includes('file-saver')) {
+            warning.message.includes('file-saver') ||
+            warning.message.includes('Browserslist') ||
+            warning.message.includes('browsers data')) {
           return;
         }
         warn(warning);
