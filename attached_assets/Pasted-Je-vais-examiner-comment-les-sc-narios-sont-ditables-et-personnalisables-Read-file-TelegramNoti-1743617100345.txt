@@ -1,0 +1,106 @@
+Je vais examiner comment les scénarios sont éditables et personnalisables.
+
+
+Read file: TelegramNotifier-main/routes.py
+Voici comment les scénarios sont éditables et personnalisables dans l'application :
+
+1. **Interface de Gestion des Scénarios**
+   - Route `/scenarios` pour afficher tous les scénarios
+   - Route `/scenarios/add` pour créer un nouveau scénario
+   - Route `/scenarios/edit/<int:scenario_id>` pour modifier un scénario existant
+   - Route `/scenarios/delete/<int:scenario_id>` pour supprimer un scénario
+   - Route `/scenarios/run/<scenario_name>` pour exécuter un scénario manuellement
+
+2. **Structure d'un Scénario**
+   ```python
+   class Scenario(db.Model):
+       id = db.Column(db.Integer, primary_key=True)
+       name = db.Column(db.String(100), nullable=False, unique=True)
+       display_name = db.Column(db.String(100), nullable=False)
+       description = db.Column(db.Text, nullable=False)
+       schedule = db.Column(db.String(100), nullable=False)
+       actions = db.Column(db.Text, nullable=False)
+       icon = db.Column(db.String(50), nullable=False, default="fa-calendar-alt")
+       color = db.Column(db.String(50), nullable=False, default="primary")
+       python_code = db.Column(db.Text, nullable=True)
+       is_custom_code = db.Column(db.Boolean, default=False)
+   ```
+
+3. **Personnalisation des Scénarios**
+
+   a. **Scénarios Standard** :
+   - Nom unique
+   - Nom d'affichage
+   - Description
+   - Planification (cron expression)
+   - Actions prédéfinies
+   - Icône et couleur pour l'interface
+
+   b. **Scénarios Personnalisés** :
+   - Code Python personnalisé
+   - Accès aux modèles de données
+   - Accès aux utilitaires (bot Telegram, Excel)
+   - Environnement d'exécution sécurisé
+
+4. **Exemple de Scénario Personnalisé**
+   ```python
+   def run_scenario():
+       try:
+           # Accès aux modèles
+           courses = Course.query.all()
+           
+           # Accès aux utilitaires
+           bot = init_telegram_bot()
+           
+           # Logique personnalisée
+           for course in courses:
+               # Faire quelque chose avec chaque cours
+               pass
+           
+           return True, "Scénario exécuté avec succès"
+       except Exception as e:
+           return False, f"Erreur: {str(e)}"
+   ```
+
+5. **Fonctionnalités de Personnalisation**
+
+   a. **Planification** :
+   - Expressions cron pour la planification
+   - Exécution manuelle possible
+   - Planification flexible
+
+   b. **Actions** :
+   - Envoi de messages Telegram
+   - Traitement de données Excel
+   - Mise à jour des cours
+   - Calcul de statistiques
+   - Génération de rapports
+
+   c. **Interface** :
+   - Icônes personnalisables
+   - Couleurs personnalisables
+   - Description détaillée
+   - Nom d'affichage personnalisé
+
+6. **Sécurité et Validation**
+   - Vérification des permissions utilisateur
+   - Validation des entrées
+   - Environnement d'exécution isolé
+   - Gestion des erreurs
+   - Logging des exécutions
+
+7. **Intégration avec le Système**
+   - Accès à la base de données
+   - Intégration avec le bot Telegram
+   - Traitement des fichiers Excel
+   - Système de logging
+   - Gestion des erreurs
+
+8. **Exemples d'Utilisation**
+   - Envoi automatique de rapports
+   - Nettoyage périodique des données
+   - Calcul de statistiques personnalisées
+   - Synchronisation avec des systèmes externes
+   - Génération de rapports personnalisés
+
+Cette architecture permet une grande flexibilité dans la création et la personnalisation des scénarios, tout en maintenant la sécurité et la stabilité du système.

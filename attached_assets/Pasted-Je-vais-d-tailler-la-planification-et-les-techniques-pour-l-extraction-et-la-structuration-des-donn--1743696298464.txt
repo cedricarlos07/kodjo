@@ -1,0 +1,244 @@
+Je vais détailler la planification et les techniques pour l'extraction et la structuration des données Excel.
+
+1. **Planification de l'Extraction**
+
+```python
+# excel_processor.py
+class ExcelProcessor:
+    def __init__(self):
+        self.excel_path = EXCEL_FILE_PATH
+        self.sheet_name = SHEET_NAME
+        self.column_mapping = {
+            'course_name': 'Salma Choufani - ABG - SS - 2:00pm',
+            'teacher_name': 'Salma Choufani',
+            'day': 'DAY',
+            'time': 'TIME (France)',
+            'telegram_group': 'TELEGRAM GROUP ID'
+        }
+        
+    def validate_excel_structure(self, df):
+        """Vérifie la structure du fichier Excel"""
+        required_columns = list(self.column_mapping.values())
+        missing_columns = [col for col in required_columns if col not in df.columns]
+        if missing_columns:
+            raise ValueError(f"Colonnes manquantes: {missing_columns}")
+```
+
+2. **Techniques d'Extraction**
+
+```python
+def load_excel_data(self):
+    """Charge et valide les données Excel"""
+    try:
+        # Lecture du fichier Excel
+        df = pd.read_excel(
+            self.excel_path,
+            sheet_name=self.sheet_name,
+            engine='openpyxl'
+        )
+        
+        # Validation de la structure
+        self.validate_excel_structure(df)
+        
+        # Nettoyage des données
+        df = self.clean_data(df)
+        
+        return df
+    except Exception as e:
+        logger.error(f"Erreur lors du chargement Excel: {str(e)}")
+        return None
+
+def clean_data(self, df):
+    """Nettoie et structure les données"""
+    # Suppression des lignes vides
+    df = df.dropna(how='all')
+    
+    # Conversion des types de données
+    df = self.convert_data_types(df)
+    
+    # Standardisation des formats
+    df = self.standardize_formats(df)
+    
+    return df
+```
+
+3. **Structuration des Données**
+
+```python
+def process_course_data(self, df):
+    """Structure les données des cours"""
+    courses = []
+    
+    for _, row in df.iterrows():
+        try:
+            course_data = {
+                'name': self.extract_course_name(row),
+                'teacher': self.extract_teacher_name(row),
+                'schedule': self.extract_schedule(row),
+                'group': self.extract_telegram_group(row)
+            }
+            
+            # Validation des données
+            if self.validate_course_data(course_data):
+                courses.append(course_data)
+                
+        except Exception as e:
+            logger.error(f"Erreur traitement ligne {_}: {str(e)}")
+            
+    return courses
+
+def extract_course_name(self, row):
+    """Extrait et nettoie le nom du cours"""
+    raw_name = row[self.column_mapping['course_name']]
+    return str(raw_name).strip()
+
+def extract_schedule(self, row):
+    """Extrait et structure l'horaire"""
+    day = self._get_day_of_week_index(row[self.column_mapping['day']])
+    time = self._parse_time(row[self.column_mapping['time']])
+    
+    return {
+        'day_of_week': day,
+        'start_time': time,
+        'end_time': self.calculate_end_time(time)
+    }
+```
+
+4. **Validation et Transformation**
+
+```python
+def validate_course_data(self, course_data):
+    """Valide les données d'un cours"""
+    required_fields = ['name', 'teacher', 'schedule']
+    return all(course_data.get(field) for field in required_fields)
+
+def convert_data_types(self, df):
+    """Convertit les types de données"""
+    # Conversion des dates et heures
+    df[self.column_mapping['time']] = pd.to_datetime(
+        df[self.column_mapping['time']],
+        errors='coerce'
+    )
+    
+    # Conversion des IDs Telegram
+    df[self.column_mapping['telegram_group']] = df[
+        self.column_mapping['telegram_group']
+    ].astype(str)
+    
+    return df
+```
+
+5. **Gestion des Erreurs et Logging**
+
+```python
+def process_with_error_handling(self):
+    """Traite les données avec gestion des erreurs"""
+    try:
+        # Chargement des données
+        df = self.load_excel_data()
+        if df is None:
+            return None
+            
+        # Traitement des données
+        courses = self.process_course_data(df)
+        
+        # Log des résultats
+        self.log_processing_results(courses)
+        
+        return courses
+        
+    except Exception as e:
+        logger.error(f"Erreur lors du traitement: {str(e)}")
+        return None
+
+def log_processing_results(self, courses):
+    """Enregistre les résultats du traitement"""
+    log_entry = Log(
+        level="INFO",
+        scenario="excel_processing",
+        message=f"Traitement terminé: {len(courses)} cours traités"
+    )
+    db.session.add(log_entry)
+    db.session.commit()
+```
+
+6. **Intégration avec la Base de Données**
+
+```python
+def update_database(self, courses):
+    """Met à jour la base de données avec les cours traités"""
+    try:
+        for course_data in courses:
+            # Recherche d'un cours existant
+            existing_course = Course.query.filter_by(
+                course_name=course_data['name'],
+                day_of_week=course_data['schedule']['day_of_week']
+            ).first()
+            
+            if existing_course:
+                # Mise à jour du cours existant
+                self.update_existing_course(existing_course, course_data)
+            else:
+                # Création d'un nouveau cours
+                self.create_new_course(course_data)
+                
+        db.session.commit()
+        return True
+        
+    except Exception as e:
+        db.session.rollback()
+        logger.error(f"Erreur mise à jour BD: {str(e)}")
+        return False
+```
+
+7. **Planification Automatique**
+
+```python
+def schedule_course_updates(self):
+    """Planifie les mises à jour des cours"""
+    scheduler = APScheduler()
+    
+    @scheduler.task('cron', id='update_courses', day_of_week='sun', hour=0)
+    def weekly_update():
+        processor = ExcelProcessor()
+        courses = processor.process_with_error_handling()
+        if courses:
+            processor.update_database(courses)
+```
+
+8. **Exemple d'Utilisation**
+
+```python
+# Utilisation du processeur
+processor = ExcelProcessor()
+
+# Traitement des données
+courses = processor.process_with_error_handling()
+
+# Mise à jour de la base de données
+if courses:
+    success = processor.update_database(courses)
+    if success:
+        print("Mise à jour réussie")
+    else:
+        print("Erreur lors de la mise à jour")
+```
+
+Cette structure permet :
+- Une extraction robuste des données
+- Une validation complète
+- Une transformation efficace
+- Une gestion des erreurs
+- Un logging détaillé
+- Une intégration avec la base de données
+- Une planification automatique
+
+Les techniques utilisées incluent :
+- Pandas pour le traitement des données
+- Validation des types
+- Gestion des erreurs
+- Logging systématique
+- Transactions de base de données
+- Planification des tâches
+
+Cette approche assure une extraction fiable et une structuration cohérente des données depuis les fichiers Excel.

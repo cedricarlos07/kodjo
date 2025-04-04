@@ -1,0 +1,130 @@
+Je vais examiner le système de gestion des cours et le traitement des fichiers Excel.
+
+
+Read file: TelegramNotifier-main/excel_processor.py
+Voici comment fonctionne le système de gestion des cours et le traitement des fichiers Excel :
+
+1. **Structure du Fichier Excel**
+   Le système attend un fichier Excel avec les colonnes suivantes :
+   - `Salma Choufani - ABG - SS - 2:00pm` : Nom du cours
+   - `Salma Choufani` : Nom du professeur
+   - `DAY` : Jour de la semaine
+   - `TIME (France)` : Heure de début (format français)
+   - `TELEGRAM GROUP ID` : ID du groupe Telegram
+
+2. **Traitement des Données**
+
+   a. **Chargement du Fichier** :
+   ```python
+   def load_excel_data(self):
+       # Vérifie l'existence du fichier
+       # Charge les données avec pandas
+       # Vérifie si le fichier n'est pas vide
+       # Retourne un DataFrame pandas
+   ```
+
+   b. **Conversion des Jours** :
+   ```python
+   def _get_day_of_week_index(self, day_str):
+       # Convertit les jours en indices (0-6)
+       # Support multilingue (français/anglais)
+       # Exemple: "lundi" -> 0, "monday" -> 0
+   ```
+
+   c. **Traitement des Heures** :
+   ```python
+   def _parse_time(self, time_str):
+       # Gère plusieurs formats d'heures
+       # Format spécifique: "20h 30 France"
+       # Formats standards: "HH:MM", "HH:MM:SS"
+       # Conversion en objets time Python
+   ```
+
+3. **Mise à Jour des Cours**
+
+   a. **Calcul de la Prochaine Occurrence** :
+   ```python
+   def _get_next_occurrence(self, day_of_week):
+       # Calcule la prochaine date du cours
+       # Prend en compte le jour actuel
+       # Ajuste pour la semaine suivante si nécessaire
+   ```
+
+   b. **Traitement des Lignes** :
+   ```python
+   def update_course_schedules(self):
+       # Pour chaque ligne du fichier Excel :
+       # 1. Extraction des informations
+       # 2. Validation des données
+       # 3. Conversion des formats
+       # 4. Création ou mise à jour du cours
+   ```
+
+4. **Gestion des Erreurs et Validation**
+
+   a. **Vérifications** :
+   - Existence du fichier Excel
+   - Données manquantes
+   - Formats invalides
+   - Doublons de cours
+
+   b. **Logging** :
+   - Suivi des opérations
+   - Enregistrement des erreurs
+   - Statistiques de traitement
+
+5. **Création des Liens Zoom**
+
+   ```python
+   def create_zoom_links(self):
+       # Pour chaque cours :
+       # 1. Création de la réunion Zoom
+       # 2. Association du lien au cours
+       # 3. Mise à jour de la base de données
+   ```
+
+6. **Export des Données**
+
+   ```python
+   def export_to_excel(self):
+       # Export des cours vers Excel
+       # Format standardisé
+       # Inclut toutes les informations
+   ```
+
+7. **Processus Complet**
+
+   a. **Chargement** :
+   1. Lecture du fichier Excel
+   2. Validation du format
+   3. Conversion des données
+
+   b. **Traitement** :
+   1. Extraction des informations
+   2. Validation des données
+   3. Conversion des formats
+   4. Calcul des dates
+   5. Création/mise à jour des cours
+
+   c. **Intégration** :
+   1. Création des liens Zoom
+   2. Association des groupes Telegram
+   3. Mise à jour de la base de données
+
+8. **Sécurité et Robustesse**
+
+   - Gestion des erreurs
+   - Validation des données
+   - Logging complet
+   - Sauvegarde des données
+   - Support multilingue
+
+9. **Fonctionnalités Avancées**
+
+   - Calcul automatique des heures de fin
+   - Gestion des fuseaux horaires
+   - Support des formats de date/heure multiples
+   - Détection des doublons
+   - Mise à jour incrémentale
+
+Ce système permet une gestion efficace et automatisée des cours, avec une grande flexibilité dans le traitement des données et une robustesse face aux erreurs potentielles.

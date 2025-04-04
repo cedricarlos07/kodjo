@@ -1,0 +1,687 @@
+[
+  {
+    "name": "Mina Lepsanovic - BBG - MW - 7:30pm",
+    "level": "BBG",
+    "coach": "Mina Lepsanovic",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Mina Lepsanovic - BBG - MW\t- 9:00pm",
+    "level": "BBG",
+    "coach": "Mina Lepsanovic",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi - ABG - MW - 8:30pm",
+    "level": "ABG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi - ABG - MW - 7:00pm",
+    "level": "ABG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - ABG - MW - 9:00pm",
+    "level": "ABG",
+    "coach": "Wissam Eddine",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - ABG - MW - 7:00pm",
+    "level": "ABG",
+    "coach": "Wissam Eddine",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hafida Faraj - ABG - MW - 7:30pm",
+    "level": "ABG",
+    "coach": "Hafida Faraj",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hafida Faraj - ABG - MW - 9:00pm",
+    "level": "ABG",
+    "coach": "Hafida Faraj",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maryam Dannoun - ABG\t- MW - 8:00pm",
+    "level": "ABG",
+    "coach": "Maryam Dannoun",
+    "dayOfWeek": "Tuesday",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maryam Dannoun - ABG\t- MW - 7:00pm",
+    "level": "ABG",
+    "coach": "Maryam Dannoun",
+    "dayOfWeek": "Tuesday",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Jahnvi Mahtani - IG\t- MW - 7:00pm",
+    "level": "IG",
+    "coach": "Jahnvi Mahtani",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Jahnvi Mahtani - IG - MW- 8:30pm",
+    "level": "IG",
+    "coach": "Jahnvi Mahtani",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Mina Lepsanovic - ABG - TT - 7:30pm",
+    "level": "ABG",
+    "coach": "Mina Lepsanovic",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Mina Lepsanovic - ABG - TT - 9:00pm",
+    "level": "ABG",
+    "coach": "Mina Lepsanovic",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi BBG - TT - 8:30pm",
+    "level": "BBG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi  - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - ZBG - TT - 8:00pm",
+    "level": "BBG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - ZBG - TT - 9:00pm",
+    "level": "BBG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - BBG -TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Wissam Eddine",
+    "dayOfWeek": "Saturday",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - BBG - TT - 9:00pm",
+    "level": "BBG",
+    "coach": "Wissam Eddine",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hafida Faraj - ABG - TT - 9:00pm",
+    "level": "ABG",
+    "coach": "Hafida Faraj",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maryam Dannoun - IG - TT - 7:00pm",
+    "level": "IG",
+    "coach": "Maryam Dannoun",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maryam Dannoun - ABG\t- TT\t- 8:00pm",
+    "level": "ABG",
+    "coach": "Maryam Dannoun",
+    "dayOfWeek": "Tuesday",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - TT - 9:00pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Nassiba Faiq - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Nassiba Faiq",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Nassiba Faiq - BBG - TT - 8:30pm",
+    "level": "BBG",
+    "coach": "Nassiba Faiq",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Rasha Alaoui - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Rasha Alaoui",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Rasha Alaoui - BBG - TT - 9:00pm",
+    "level": "BBG",
+    "coach": "Rasha Alaoui",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Mina Lepsanovic - BBG - MW - 7:30pm",
+    "level": "BBG",
+    "coach": "Mina Lepsanovic",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Mina Lepsanovic - BBG - MW\t- 9:00pm",
+    "level": "BBG",
+    "coach": "Mina Lepsanovic",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi - ABG - MW - 8:30pm",
+    "level": "ABG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi - ABG - MW - 7:00pm",
+    "level": "ABG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - ABG - MW - 9:00pm",
+    "level": "ABG",
+    "coach": "Wissam Eddine",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - ABG - MW - 7:00pm",
+    "level": "ABG",
+    "coach": "Wissam Eddine",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hafida Faraj - ABG - MW - 7:30pm",
+    "level": "ABG",
+    "coach": "Hafida Faraj",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hafida Faraj - ABG - MW - 9:00pm",
+    "level": "ABG",
+    "coach": "Hafida Faraj",
+    "schedulePattern": "MW",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maryam Dannoun - ABG\t- MW - 8:00pm",
+    "level": "ABG",
+    "coach": "Maryam Dannoun",
+    "dayOfWeek": "Tuesday",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maryam Dannoun - ABG\t- MW - 7:00pm",
+    "level": "ABG",
+    "coach": "Maryam Dannoun",
+    "dayOfWeek": "Tuesday",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Jahnvi Mahtani - IG - SS - 11:00am",
+    "level": "IG",
+    "coach": "Jahnvi Mahtani",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Jahnvi Mahtani - IG - MW- 8:30pm",
+    "level": "IG",
+    "coach": "Jahnvi Mahtani",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Mina Lepsanovic - ABG - TT - 7:30pm",
+    "level": "ABG",
+    "coach": "Mina Lepsanovic",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Mina Lepsanovic - ABG - TT - 9:00pm",
+    "level": "ABG",
+    "coach": "Mina Lepsanovic",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi BBG - TT - 8:30pm",
+    "level": "BBG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi  - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hafida Faraj - ZBG - TT - 8:00pm",
+    "level": "BBG",
+    "coach": "Hafida Faraj",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Salma Choufani - ZBG - SS - 10:00am",
+    "level": "BBG",
+    "coach": "Salma Choufani",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - BBG -TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Wissam Eddine",
+    "dayOfWeek": "Saturday",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - BBG - TT - 9:00pm",
+    "level": "BBG",
+    "coach": "Wissam Eddine",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hafida Faraj - ABG - TT - 9:00pm",
+    "level": "ABG",
+    "coach": "Hafida Faraj",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maryam Dannoun - IG - TT - 7:00pm",
+    "level": "IG",
+    "coach": "Maryam Dannoun",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maryam Dannoun - ABG\t- TT\t- 8:00pm",
+    "level": "ABG",
+    "coach": "Maryam Dannoun",
+    "dayOfWeek": "Tuesday",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - TT - 9:00pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Nassiba Faiq - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Nassiba Faiq",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Nassiba Faiq - BBG - TT - 8:30pm",
+    "level": "BBG",
+    "coach": "Nassiba Faiq",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Rasha Alaoui - BBG - TT - 7:00pm",
+    "level": "BBG",
+    "coach": "Rasha Alaoui",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Rasha Alaoui - BBG - TT - 9:00pm",
+    "level": "BBG",
+    "coach": "Rasha Alaoui",
+    "schedulePattern": "TT",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi - BBG - FS - 7:30pm",
+    "level": "BBG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - FS - 6:00pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - FS - 9:00pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - FS - 7:30pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Nassiba Faiq - BBG - FS - 7:00pm",
+    "level": "BBG",
+    "coach": "Nassiba Faiq",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Nassiba Faiq - BBG - FS - 8:30pm",
+    "level": "BBG",
+    "coach": "Nassiba Faiq",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Maimouna Koffi - BBG - FS - 7:30pm",
+    "level": "BBG",
+    "coach": "Maimouna Koffi",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - FS - 6:00pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - FS - 9:00pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Hanae El Kraid - BBG - FS - 7:30pm",
+    "level": "BBG",
+    "coach": "Hanae El Kraid",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Nassiba Faiq - BBG - FS - 7:00pm",
+    "level": "BBG",
+    "coach": "Nassiba Faiq",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Nassiba Faiq - BBG - FS - 8:30pm",
+    "level": "BBG",
+    "coach": "Nassiba Faiq",
+    "schedulePattern": "FS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - ABG - SS - 9:00am",
+    "level": "ABG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - BBG - SS - 11:00am",
+    "level": "BBG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - BBG - SS - 10:00am",
+    "level": "BBG",
+    "coach": "Wissam Eddine",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Farida Kelle - ABG - SS - 10:30am",
+    "level": "ABG",
+    "coach": "Farida Kelle",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Farida Kelle - ABG - SS - 12:00pm",
+    "level": "ABG",
+    "coach": "Farida Kelle",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - IAG - SS - 10:00am",
+    "level": "BBG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Salma Choufani - ABG - SS - 2:00pm",
+    "level": "ABG",
+    "coach": "Salma Choufani",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - ABG - SS - 9:00am",
+    "level": "ABG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - BBG - SS - 11:00am",
+    "level": "BBG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Wissam Eddine - BBG - SS - 10:00am",
+    "level": "BBG",
+    "coach": "Wissam Eddine",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Farida Kelle - ABG - SS - 10:30am",
+    "level": "ABG",
+    "coach": "Farida Kelle",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Farida Kelle - ABG - SS - 12:00pm",
+    "level": "ABG",
+    "coach": "Farida Kelle",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Aby Ndiaye - IAG - SS - 10:00am",
+    "level": "BBG",
+    "coach": "Aby Ndiaye",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  },
+  {
+    "name": "Salma Choufani - ABG - SS - 2:00pm",
+    "level": "ABG",
+    "coach": "Salma Choufani",
+    "schedulePattern": "SS",
+    "time": "20:25",
+    "active": true
+  }
+]

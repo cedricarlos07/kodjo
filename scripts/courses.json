@@ -1,0 +1,731 @@
+[
+  {
+    "id": 1,
+    "name": "Mina Lepsanovic - BBG - MW - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001280305339"
+  },
+  {
+    "id": 2,
+    "name": "Mina Lepsanovic - BBG - MW\t- 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001706969621"
+  },
+  {
+    "id": 3,
+    "name": "Maimouna Koffi - ABG - MW - 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001189215986"
+  },
+  {
+    "id": 4,
+    "name": "Maimouna Koffi - ABG - MW - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001525896262"
+  },
+  {
+    "id": 5,
+    "name": "Wissam Eddine - ABG - MW - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001200673710"
+  },
+  {
+    "id": 6,
+    "name": "Wissam Eddine - ABG - MW - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001450960271"
+  },
+  {
+    "id": 7,
+    "name": "Hafida Faraj - ABG - MW - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001674281614"
+  },
+  {
+    "id": 8,
+    "name": "Hafida Faraj - ABG - MW - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001730425484"
+  },
+  {
+    "id": 9,
+    "name": "Maryam Dannoun - ABG\t- MW - 8:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "21h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001183569832"
+  },
+  {
+    "id": 10,
+    "name": "Maryam Dannoun - ABG\t- MW - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001539349411"
+  },
+  {
+    "id": 11,
+    "name": "Jahnvi Mahtani - IG - MW- 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Monday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001869970621"
+  },
+  {
+    "id": 12,
+    "name": "Mina Lepsanovic - ABG - TT - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001668163742"
+  },
+  {
+    "id": 13,
+    "name": "Mina Lepsanovic - ABG - TT - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001737172709"
+  },
+  {
+    "id": 14,
+    "name": "Maimouna Koffi BBG - TT - 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001159742178"
+  },
+  {
+    "id": 15,
+    "name": "Maimouna Koffi  - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001605585045"
+  },
+  {
+    "id": 16,
+    "name": "Aby Ndiaye - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001685687091"
+  },
+  {
+    "id": 17,
+    "name": "Wissam Eddine - BBG -TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001268663743"
+  },
+  {
+    "id": 18,
+    "name": "Hafida Faraj - ABG - TT - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001160001497"
+  },
+  {
+    "id": 19,
+    "name": "Maryam Dannoun - IG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001272552537"
+  },
+  {
+    "id": 20,
+    "name": "Maryam Dannoun - ABG\t- TT\t- 8:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "21h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001247646684"
+  },
+  {
+    "id": 21,
+    "name": "Hanae El Kraid - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001793277539"
+  },
+  {
+    "id": 22,
+    "name": "Hanae El Kraid - BBG - TT - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001821694420"
+  },
+  {
+    "id": 23,
+    "name": "Nassiba Faiq - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001821946148"
+  },
+  {
+    "id": 24,
+    "name": "Nassiba Faiq - BBG - TT - 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1002095663162"
+  },
+  {
+    "id": 25,
+    "name": "Rasha Alaoui - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001887667328"
+  },
+  {
+    "id": 26,
+    "name": "Rasha Alaoui - BBG - TT - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Tuesday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1002109645611"
+  },
+  {
+    "id": 27,
+    "name": "Mina Lepsanovic - BBG - MW - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001280305339"
+  },
+  {
+    "id": 28,
+    "name": "Mina Lepsanovic - BBG - MW\t- 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001706969621"
+  },
+  {
+    "id": 29,
+    "name": "Maimouna Koffi - ABG - MW - 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001189215986"
+  },
+  {
+    "id": 30,
+    "name": "Maimouna Koffi - ABG - MW - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001525896262"
+  },
+  {
+    "id": 31,
+    "name": "Wissam Eddine - ABG - MW - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001200673710"
+  },
+  {
+    "id": 32,
+    "name": "Wissam Eddine - ABG - MW - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001450960271"
+  },
+  {
+    "id": 33,
+    "name": "Hafida Faraj - ABG - MW - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001674281614"
+  },
+  {
+    "id": 34,
+    "name": "Hafida Faraj - ABG - MW - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001730425484"
+  },
+  {
+    "id": 35,
+    "name": "Maryam Dannoun - ABG\t- MW - 8:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "21h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001183569832"
+  },
+  {
+    "id": 36,
+    "name": "Maryam Dannoun - ABG\t- MW - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001539349411"
+  },
+  {
+    "id": 37,
+    "name": "Jahnvi Mahtani - IG - MW- 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Wednesday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001869970621"
+  },
+  {
+    "id": 38,
+    "name": "Mina Lepsanovic - ABG - TT - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001668163742"
+  },
+  {
+    "id": 39,
+    "name": "Mina Lepsanovic - ABG - TT - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001737172709"
+  },
+  {
+    "id": 40,
+    "name": "Maimouna Koffi BBG - TT - 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001159742178"
+  },
+  {
+    "id": 41,
+    "name": "Maimouna Koffi  - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "s",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001605585045"
+  },
+  {
+    "id": 42,
+    "name": "Hafida Faraj - ZBG - TT - 8:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "21:00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001551560896"
+  },
+  {
+    "id": 43,
+    "name": "Aby Ndiaye - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001685687091"
+  },
+  {
+    "id": 44,
+    "name": "Wissam Eddine - BBG -TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001268663743"
+  },
+  {
+    "id": 45,
+    "name": "Hafida Faraj - ABG - TT - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001160001497"
+  },
+  {
+    "id": 46,
+    "name": "Maryam Dannoun - IG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001272552537"
+  },
+  {
+    "id": 47,
+    "name": "Maryam Dannoun - ABG\t- TT\t- 8:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "21h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001247646684"
+  },
+  {
+    "id": 48,
+    "name": "Hanae El Kraid - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001793277539"
+  },
+  {
+    "id": 49,
+    "name": "Hanae El Kraid - BBG - TT - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001821694420"
+  },
+  {
+    "id": 50,
+    "name": "Nassiba Faiq - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001821946148"
+  },
+  {
+    "id": 51,
+    "name": "Nassiba Faiq - BBG - TT - 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1002095663162"
+  },
+  {
+    "id": 52,
+    "name": "Rasha Alaoui - BBG - TT - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001887667328"
+  },
+  {
+    "id": 53,
+    "name": "Rasha Alaoui - BBG - TT - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Thursday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1002109645611"
+  },
+  {
+    "id": 54,
+    "name": "Maimouna Koffi - BBG - FS - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Friday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001902739184"
+  },
+  {
+    "id": 55,
+    "name": "Hanae El Kraid - BBG - FS - 6:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Friday",
+    "time": "19h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001453455246"
+  },
+  {
+    "id": 56,
+    "name": "Hanae El Kraid - BBG - FS - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Friday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001249152277"
+  },
+  {
+    "id": 57,
+    "name": "Hanae El Kraid - BBG - FS - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Friday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001915536195"
+  },
+  {
+    "id": 58,
+    "name": "Nassiba Faiq - BBG - FS - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Friday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001469511460"
+  },
+  {
+    "id": 59,
+    "name": "Nassiba Faiq - BBG - FS - 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Friday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001569056621"
+  },
+  {
+    "id": 60,
+    "name": "Maimouna Koffi - BBG - FS - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001902739184"
+  },
+  {
+    "id": 61,
+    "name": "Jahnvi Mahtani - IG - SS - 11:00",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "11:00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001456385271"
+  },
+  {
+    "id": 62,
+    "name": "Salma Choufani - ZBG - SS - 10:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "10:00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001676225664"
+  },
+  {
+    "id": 63,
+    "name": "Hanae El Kraid - BBG - FS - 6:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "19h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001453455246"
+  },
+  {
+    "id": 64,
+    "name": "Hanae El Kraid - BBG - FS - 9:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "22h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001249152277"
+  },
+  {
+    "id": 65,
+    "name": "Hanae El Kraid - BBG - FS - 7:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "20h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001915536195"
+  },
+  {
+    "id": 66,
+    "name": "Nassiba Faiq - BBG - FS - 7:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "20h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001469511460"
+  },
+  {
+    "id": 67,
+    "name": "Nassiba Faiq - BBG - FS - 8:30pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "21h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001569056621"
+  },
+  {
+    "id": 68,
+    "name": "Aby Ndiaye - ABG - SS - 9:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "10h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001338846170"
+  },
+  {
+    "id": 69,
+    "name": "Aby Ndiaye - BBG - SS - 11:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "12h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001224184238"
+  },
+  {
+    "id": 70,
+    "name": "Wissam Eddine - BBG - SS - 10:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "11h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001580734055"
+  },
+  {
+    "id": 71,
+    "name": "Farida Kelle - ABG - SS - 10:30am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "11h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001729177792"
+  },
+  {
+    "id": 72,
+    "name": "Farida Kelle - ABG - SS - 12:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "13h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001736827160"
+  },
+  {
+    "id": 73,
+    "name": "Aby Ndiaye - IAG - SS - 10:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "10:00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001102995178"
+  },
+  {
+    "id": 74,
+    "name": "Salma Choufani - ABG - SS - 2:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Saturday",
+    "time": "15h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1002023369621"
+  },
+  {
+    "id": 75,
+    "name": "Aby Ndiaye - ABG - SS - 9:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Sunday",
+    "time": "10h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001338846170"
+  },
+  {
+    "id": 76,
+    "name": "Aby Ndiaye - BBG - SS - 11:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Sunday",
+    "time": "12h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001224184238"
+  },
+  {
+    "id": 77,
+    "name": "Wissam Eddine - BBG - SS - 12:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Sunday",
+    "time": "11h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001580734055"
+  },
+  {
+    "id": 78,
+    "name": "Farida Kelle - ABG - SS - 10:30am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Sunday",
+    "time": "11h 30 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001729177792"
+  },
+  {
+    "id": 79,
+    "name": "Farida Kelle - ABG - SS - 12:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Sunday",
+    "time": "13h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001736827160"
+  },
+  {
+    "id": 80,
+    "name": "Aby Ndiaye - IAG - SS - 10:00am",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Sunday",
+    "time": "10:00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1001102995178"
+  },
+  {
+    "id": 81,
+    "name": "Salma Choufani - ABG - SS - 2:00pm",
+    "instructor": "Kodjo",
+    "dayOfWeek": "Sunday",
+    "time": "15h 00 France",
+    "zoomLink": "https://zoom.us/j/meeting",
+    "telegramGroup": "-1002023369621"
+  }
+]

@@ -1,0 +1,68 @@
+Voici les différents scénarios et leur fonctionnement dans l'application :
+Mise à jour des Cours (update_courses_job)
+Fréquence : Hebdomadaire (dimanche à minuit)
+Fonction : Met à jour les horaires des cours depuis un fichier Excel
+Actions :
+Lit les données depuis Excel
+Met à jour les horaires des cours
+Enregistre les résultats dans les logs
+Création des Liens Zoom (create_zoom_links_job)
+Fréquence : Hebdomadaire (après la mise à jour des cours)
+Fonction : Génère les liens Zoom pour les cours
+Actions :
+Crée les réunions Zoom
+Associe les liens aux cours
+Enregistre les résultats
+Génération des Messages (generate_messages_job)
+Fréquence : Hebdomadaire (après la création des liens Zoom)
+Fonction : Prépare les messages Telegram pour la semaine
+Actions :
+Récupère les cours de la semaine
+Génère les messages pour chaque cours
+Planifie l'envoi pour 8h00
+Stocke les messages dans la base de données
+Envoi des Messages Quotidiens (send_daily_messages_job)
+Fréquence : Quotidienne (8h00)
+Fonction : Envoie les messages planifiés
+Actions :
+Récupère les messages du jour
+Envoie via Telegram
+Marque les messages comme envoyés
+Enregistre les résultats
+Envoi des Classements Quotidiens (send_daily_rankings_job)
+Fréquence : Quotidienne (20h00)
+Fonction : Envoie les classements des étudiants
+Actions :
+Récupère les cours du jour
+Calcule les classements
+Envoie aux groupes Telegram actifs
+Scénarios Personnalisés (run_custom_python_code)
+Fonction : Permet d'exécuter du code Python personnalisé
+Caractéristiques :
+Accès à la base de données
+Accès aux modèles
+Accès aux utilitaires (bot Telegram, processeur Excel)
+Environnement sécurisé d'exécution
+Structure requise :
+Apply
+Système de Logging :
+Chaque scénario enregistre ses exécutions
+Suivi des succès et erreurs
+Horodatage des actions
+Association avec les scénarios
+Initialisation :
+Les scénarios sont initialisés au démarrage de l'application avec :
+Configuration des horaires
+Association des fonctions aux tâches planifiées
+Mise en place du système de logging
+Gestion des Erreurs :
+Capture des exceptions
+Logging des erreurs
+Suivi des échecs
+Messages d'erreur détaillés
+Cette architecture permet une automatisation complète des tâches liées aux cours, avec :
+Planification hebdomadaire
+Notifications quotidiennes
+Suivi des participations
+Classements automatiques
+Possibilité d'extension via des scénarios personnalisés

@@ -1,0 +1,70 @@
+C'est une application de gestion et d'automatisation des cours en ligne qui :
+Gère les réunions Zoom
+Envoie des notifications via Telegram
+Suit la participation des étudiants
+Gère un système de points et de classement
+Fonctionnalités Détaillées :
+Gestion des Cours (Course)
+Création et gestion des cours avec horaires
+Association avec des groupes Telegram
+Intégration des liens Zoom
+Planification hebdomadaire
+Système de Notifications (ScheduledMessage)
+Planification automatique des messages
+Envoi via Telegram
+Suivi des messages envoyés
+Association avec les cours
+Suivi de la Participation (ZoomAttendance)
+Suivi des connexions/déconnexions Zoom
+Calcul de la durée de présence
+Attribution de points de participation
+Association avec les cours
+Système de Points et Classement (UserRanking)
+Points pour les messages (1 point par message)
+Points pour la participation (10 points par présence)
+Classements quotidiens, hebdomadaires et mensuels
+Suivi des dates de dernière activité
+Gestion des Utilisateurs (User)
+Système d'authentification
+Rôles administrateur/utilisateur
+Suivi des connexions
+Gestion des profils
+Automatisation (Scenario)
+Création de scénarios personnalisés
+Planification d'actions automatiques
+Support de code Python personnalisé
+Interface visuelle avec icônes et couleurs
+Journalisation (Log)
+Suivi des événements système
+Différents niveaux de log (INFO, WARNING, ERROR)
+Association avec les scénarios
+Horodatage des événements
+Configuration (AppSettings)
+Mode simulation pour les tests
+Configuration des groupes de test
+Paramètres généraux de l'application
+Intégration Telegram (TelegramMessage)
+Suivi des messages dans les groupes
+Attribution de points pour l'activité
+Association avec les utilisateurs
+Horodatage des messages
+Caractéristiques Techniques :
+Application web Flask
+Base de données SQLAlchemy
+Planificateur de tâches APScheduler
+Interface utilisateur web
+Système de sécurité avec authentification
+Support du déploiement sur Render.com
+Gestion des dépendances avec uv
+Configuration Requise :
+Token de bot Telegram
+ID de chat Telegram
+Clés API Zoom
+Base de données (SQLite par défaut)
+Variables d'environnement pour la configuration
+Cette application est particulièrement utile pour :
+Les établissements d'enseignement en ligne
+Les cours hybrides
+La gestion de la participation des étudiants
+L'automatisation des communications
+Le suivi de l'engagement des étudiants
