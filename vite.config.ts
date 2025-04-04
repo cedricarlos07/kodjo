@@ -32,5 +32,9 @@ export default defineConfig({
     rollupOptions: {
       external: [],
     },
+    // Ensure that the SPA fallback works correctly
+    assetsDir: "assets",
+    // Generate a _redirects file for Vercel
+    copyPublicDir: true,
   },
 });

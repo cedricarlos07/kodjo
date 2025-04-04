@@ -12,8 +12,23 @@
       "dest": "/dist/index.js"
     },
     {
+      "src": "/assets/(.*)",
+      "dest": "/dist/public/assets/$1"
+    },
+    {
+      "src": "/vite.svg",
+      "dest": "/dist/public/vite.svg"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/dist/public/favicon.ico"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/dist/public/$1"
+      "dest": "/dist/public/index.html"
     }
   ],
   "env": {
