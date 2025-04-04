@@ -30,11 +30,12 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
     rollupOptions: {
-      external: [],
+      external: ['@tanstack/react-table'],
       onwarn(warning, warn) {
         // Ignorer les avertissements spécifiques
         if (warning.code === 'MODULE_LEVEL_DIRECTIVE' ||
-            warning.message.includes('react-countup')) {
+            warning.message.includes('react-countup') ||
+            warning.message.includes('@tanstack/react-table')) {
           return;
         }
         warn(warning);
