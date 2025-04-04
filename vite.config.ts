@@ -30,12 +30,15 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
     rollupOptions: {
-      external: ['@tanstack/react-table'],
+      external: ['@tanstack/react-table', 'jspdf', 'jspdf-autotable', 'file-saver'],
       onwarn(warning, warn) {
         // Ignorer les avertissements spécifiques
         if (warning.code === 'MODULE_LEVEL_DIRECTIVE' ||
             warning.message.includes('react-countup') ||
-            warning.message.includes('@tanstack/react-table')) {
+            warning.message.includes('@tanstack/react-table') ||
+            warning.message.includes('jspdf') ||
+            warning.message.includes('jspdf-autotable') ||
+            warning.message.includes('file-saver')) {
           return;
         }
         warn(warning);

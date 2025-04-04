@@ -30,7 +30,7 @@ try {
 
   // Installer les dépendances manquantes
   console.log('Installing missing dependencies...');
-  execSync('npm install @tanstack/react-table react-countup --legacy-peer-deps', { stdio: 'inherit' });
+  execSync('npm install @tanstack/react-table react-countup jspdf jspdf-autotable file-saver --legacy-peer-deps', { stdio: 'inherit' });
 
   // Exécuter le build du client avec Vite
   console.log('Building client with Vite...');
