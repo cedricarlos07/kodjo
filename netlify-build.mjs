@@ -17,14 +17,15 @@ function ensureDirectoryExists(directory) {
 try {
   console.log('Starting custom build process for Netlify...');
 
-  // Afficher les versions de Node.js et Python
+  // Afficher les versions de Node.js
   console.log('Environment information:');
   try {
     console.log('Node version:', execSync('node --version').toString().trim());
     console.log('NPM version:', execSync('npm --version').toString().trim());
-    console.log('Python version:', execSync('python --version').toString().trim());
+    // Ne pas essayer d'exécuter Python car il peut ne pas être disponible
+    console.log('Python: Skipping Python version check');
   } catch (e) {
-    console.log('Could not determine all environment versions:', e.message);
+    console.log('Could not determine environment versions:', e.message);
   }
 
   // Installer les dépendances manquantes
