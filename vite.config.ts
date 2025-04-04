@@ -31,6 +31,14 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       external: [],
+      onwarn(warning, warn) {
+        // Ignorer les avertissements spécifiques
+        if (warning.code === 'MODULE_LEVEL_DIRECTIVE' ||
+            warning.message.includes('react-countup')) {
+          return;
+        }
+        warn(warning);
+      }
     },
     // Ensure that the SPA fallback works correctly
     assetsDir: "assets",
