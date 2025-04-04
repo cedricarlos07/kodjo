@@ -1,5 +1,5 @@
 [build]
-  command = "node netlify-build.js"
+  command = "node netlify-build.mjs"
   publish = "dist/public"
 
 [[redirects]]
