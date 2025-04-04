@@ -18,7 +18,7 @@ interface DashboardStats {
   notificationsSent: number;
 }
 
-export default function Dashboard() {
+export function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { isAuthenticated } = useAuth();
   const [_, navigate] = useLocation();
