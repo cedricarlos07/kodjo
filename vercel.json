@@ -1,39 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/dist/index.js"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/dist/public/assets/$1"
-    },
-    {
-      "src": "/vite.svg",
-      "dest": "/dist/public/vite.svg"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/dist/public/favicon.ico"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/dist/public/index.html"
-    }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/dist/index.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "installCommand": "npm install",
-  "buildCommand": "npm run build"
+  }
 }
