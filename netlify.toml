@@ -1,6 +1,6 @@
 [build]
   command = "node netlify-build.mjs"
-  publish = "dist/public"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"

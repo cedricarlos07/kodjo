@@ -36,6 +36,36 @@ try {
   console.log('Building client with Vite...');
   execSync('npx vite build', { stdio: 'inherit' });
 
+  // Copier le fichier index.html dans le répertoire dist
+  console.log('Copying index.html to dist directory...');
+  if (fs.existsSync('dist/public/index.html')) {
+    ensureDirectoryExists('dist');
+    fs.copyFileSync('dist/public/index.html', 'dist/index.html');
+    console.log('index.html copied successfully');
+  } else {
+    console.log('index.html not found in dist/public');
+  }
+
+  // Copier le répertoire assets dans le répertoire dist
+  console.log('Copying assets to dist directory...');
+  if (fs.existsSync('dist/public/assets')) {
+    ensureDirectoryExists('dist/assets');
+    const assets = fs.readdirSync('dist/public/assets');
+    assets.forEach(asset => {
+      const sourcePath = `dist/public/assets/${asset}`;
+      const destPath = `dist/assets/${asset}`;
+      if (fs.statSync(sourcePath).isDirectory()) {
+        // Copier récursivement le répertoire
+        execSync(`cp -r "${sourcePath}" "${path.dirname(destPath)}"`);
+      } else {
+        fs.copyFileSync(sourcePath, destPath);
+      }
+    });
+    console.log('Assets copied successfully');
+  } else {
+    console.log('Assets directory not found in dist/public');
+  }
+
   // Exécuter le build du serveur avec esbuild
   console.log('Building server with esbuild...');
   execSync('npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist', { stdio: 'inherit' });
@@ -50,6 +80,12 @@ try {
     ensureDirectoryExists('dist/functions');
     fs.copyFileSync('netlify/functions/api.js', 'dist/functions/api.js');
   }
+
+  // Créer un fichier _redirects dans le répertoire dist
+  console.log('Creating _redirects file in dist directory...');
+  ensureDirectoryExists('dist');
+  fs.writeFileSync('dist/_redirects', '/*    /index.html   200');
+  console.log('_redirects file created successfully');
 
   console.log('Build completed successfully!');
 } catch (error) {
