@@ -5,11 +5,11 @@ import { Dashboard } from './pages/dashboard';
 import { Courses } from './pages/courses';
 import { CourseDetails } from './components/courses/CourseDetails';
 import NotFound from './pages/not-found';
-import { Login } from './pages/login';
-import { Settings } from './pages/settings';
-import { ReminderTemplates } from './pages/reminder-templates';
-import { Analytics } from './pages/analytics';
-import { NotificationSimulator } from './pages/notification-simulator';
+import Login from './pages/login';
+import Settings from './pages/settings';
+import ReminderTemplatesPage from './pages/reminder-templates';
+import AnalyticsPage from './pages/analytics';
+import NotificationSimulatorPage from './pages/notification-simulator';
 
 // Définir les routes de l'application
 const router = createBrowserRouter([
@@ -36,15 +36,15 @@ const router = createBrowserRouter([
       },
       {
         path: 'reminder-templates',
-        element: <ReminderTemplates />,
+        element: <ReminderTemplatesPage />,
       },
       {
         path: 'analytics',
-        element: <Analytics />,
+        element: <AnalyticsPage />,
       },
       {
         path: 'notification-simulator',
-        element: <NotificationSimulator />,
+        element: <NotificationSimulatorPage />,
       },
     ],
   },

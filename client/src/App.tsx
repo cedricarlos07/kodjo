@@ -7,7 +7,7 @@ import { AuthProvider } from "./context/auth-context";
 
 import Login from "./pages/login";
 import Dashboard from "./pages/modern-dashboard";
-import Courses from "./pages/courses";
+import { Courses } from "./pages/courses";
 import Utilisateurs from "./pages/utilisateurs";
 import Notifications from "./pages/notifications";
 import Rankings from "./pages/rankings";
