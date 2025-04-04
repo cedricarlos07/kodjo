@@ -2,14 +2,14 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import { Dashboard } from './pages/dashboard';
-import { CourseManagement } from './pages/course-management';
+import { Courses } from './pages/courses';
 import { CourseDetails } from './components/courses/CourseDetails';
-import { NotFound } from './pages/not-found';
+import NotFound from './pages/not-found';
 import { Login } from './pages/login';
 import { Settings } from './pages/settings';
 import { ReminderTemplates } from './pages/reminder-templates';
 import { Analytics } from './pages/analytics';
-import { Simulation } from './pages/simulation';
+import { NotificationSimulator } from './pages/notification-simulator';
 
 // Définir les routes de l'application
 const router = createBrowserRouter([
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'courses',
-        element: <CourseManagement />,
+        element: <Courses />,
       },
       {
         path: 'courses/:courseId',
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
         element: <Analytics />,
       },
       {
-        path: 'simulation',
-        element: <Simulation />,
+        path: 'notification-simulator',
+        element: <NotificationSimulator />,
       },
     ],
   },
