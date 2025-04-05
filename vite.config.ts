@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 // Déterminer la base URL en fonction de l'environnement
-const base = process.env.GITHUB_ACTIONS ? '/ENGLISHKODJO-V1/' : './'
+const base = process.env.GITHUB_ACTIONS ? '/kodjo/' : './'
 
 export default defineConfig({
   base,
