@@ -34,7 +34,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           cd dist/public
           touch .nojekyll
@@ -43,4 +43,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git push --force "https://x-access-token:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/${{ github.repository }}.git" HEAD:gh-pages
+          git push --force "https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git" HEAD:gh-pages
