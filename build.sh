@@ -8,9 +8,9 @@ echo "NPM version: $(npm -v)"
 echo "Installing dependencies..."
 npm install --legacy-peer-deps
 
-# Installer explicitement vite et esbuild
-echo "Installing vite and esbuild..."
-npm install vite@latest esbuild@latest @vitejs/plugin-react@latest --legacy-peer-deps
+# Installer explicitement vite, esbuild et tailwindcss
+echo "Installing vite, esbuild and tailwindcss..."
+npm install vite@latest esbuild@latest @vitejs/plugin-react@latest tailwindcss@latest postcss@latest autoprefixer@latest --legacy-peer-deps
 
 # Supprimer les dépendances Replit qui ne sont pas nécessaires
 echo "Removing Replit dependencies..."
@@ -19,6 +19,11 @@ npm uninstall @replit/vite-plugin-shadcn-theme-json @replit/vite-plugin-cartogra
 # Mettre à jour browserslist
 echo "Updating browserslist database..."
 npx update-browserslist-db@latest
+
+# Copier les fichiers de configuration dans le répertoire client
+echo "Copying configuration files to client directory..."
+cp postcss.config.js client/
+cp tailwind.config.js client/
 
 # Construire l'application
 echo "Building application..."
