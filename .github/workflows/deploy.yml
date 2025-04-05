@@ -30,9 +30,10 @@ jobs:
           NODE_ENV: production
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/public
-          publish_branch: gh-pages
-          force_orphan: true
+          folder: dist/public
+          branch: gh-pages
+          clean: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
