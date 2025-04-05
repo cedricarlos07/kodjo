@@ -12,6 +12,10 @@ npm install --legacy-peer-deps
 echo "Installing vite and esbuild..."
 npm install vite@latest esbuild@latest @vitejs/plugin-react@latest --legacy-peer-deps
 
+# Supprimer les dépendances Replit qui ne sont pas nécessaires
+echo "Removing Replit dependencies..."
+npm uninstall @replit/vite-plugin-shadcn-theme-json @replit/vite-plugin-cartographer @replit/vite-plugin-runtime-error-modal --legacy-peer-deps || true
+
 # Mettre à jour browserslist
 echo "Updating browserslist database..."
 npx update-browserslist-db@latest
