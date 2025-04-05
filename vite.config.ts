@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-// Déterminer la base URL en fonction de l'environnement
-const base = process.env.GITHUB_ACTIONS ? '/kodjo/' : './'
+// Base URL pour cPanel
+const base = './'
 
 export default defineConfig({
   base,
