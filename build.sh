@@ -8,6 +8,10 @@ echo "NPM version: $(npm -v)"
 echo "Installing dependencies..."
 npm install --legacy-peer-deps
 
+# Installer explicitement vite et esbuild
+echo "Installing vite and esbuild..."
+npm install vite@latest esbuild@latest @vitejs/plugin-react@latest --legacy-peer-deps
+
 # Mettre à jour browserslist
 echo "Updating browserslist database..."
 npx update-browserslist-db@latest
