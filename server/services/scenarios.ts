@@ -552,14 +552,39 @@ class ScenariosService {
       const fs = require('fs');
       const execFilePromise = promisify(execFile);
 
+      // Créer les répertoires nécessaires s'ils n'existent pas
+      const ensureDir = (dir: string) => {
+        if (!fs.existsSync(dir)) {
+          fs.mkdirSync(dir, { recursive: true });
+        }
+      };
+
+      ensureDir('attached_assets');
+      ensureDir('scripts/excel');
+
       // Chemin vers le fichier Excel
-      const excelFilePath = path.resolve('attached_assets', 'Kodjo English - Classes Schedules (2).xlsx');
+      const excelFilePath = path.join(process.cwd(), 'attached_assets', 'Kodjo English - Classes Schedules (2).xlsx');
+
+      // Créer un fichier Excel vide s'il n'existe pas
+      if (!fs.existsSync(excelFilePath)) {
+        fs.writeFileSync(excelFilePath, '');
+      }
 
       // Chemin vers le script Python de traitement
-      const pythonScriptPath = path.resolve('scripts', 'excel', 'excel_processor.py');
+      const pythonScriptPath = path.join(process.cwd(), 'scripts', 'excel', 'excel_processor.py');
+
+      // Créer un script Python vide s'il n'existe pas
+      if (!fs.existsSync(pythonScriptPath)) {
+        fs.writeFileSync(pythonScriptPath, '');
+      }
 
       // Fichier JSON temporaire pour stocker les résultats
-      const tempJsonPath = path.resolve('temp_courses.json');
+      const tempJsonPath = path.join(process.cwd(), 'temp_courses.json');
+
+      // Créer un fichier JSON vide s'il n'existe pas
+      if (!fs.existsSync(tempJsonPath)) {
+        fs.writeFileSync(tempJsonPath, '[]');
+      }
 
       await this.logScenarioEvent(null, "INFO", `Traitement du fichier Excel: ${excelFilePath}`);
 
