@@ -25,6 +25,10 @@ echo "Copying configuration files to client directory..."
 cp postcss.config.js client/
 cp tailwind.config.js client/
 
+# Exécuter le script de correction de chemin
+echo "Running path fix script..."
+node fix-paths.js
+
 # Construire l'application
 echo "Building application..."
 npm run build
