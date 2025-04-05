@@ -10,6 +10,14 @@ export default defineConfig({
   build: {
     sourcemap: true,
     minify: false,
+    outDir: 'dist/public',
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'client/index.html'),
+        test: path.resolve(__dirname, 'client/public/index-test.html')
+      }
+    }
   },
   plugins: [
     react(),
