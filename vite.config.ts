@@ -7,6 +7,10 @@ const base = process.env.GITHUB_ACTIONS ? '/kodjo/' : './'
 
 export default defineConfig({
   base,
+  build: {
+    sourcemap: true,
+    minify: false,
+  },
   plugins: [
     react(),
   ],
