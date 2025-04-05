@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import { Dashboard } from './pages/dashboard';
 import { Courses } from './pages/courses';
@@ -12,7 +12,7 @@ import AnalyticsPage from './pages/analytics';
 import NotificationSimulatorPage from './pages/notification-simulator';
 
 // Définir les routes de l'application
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,

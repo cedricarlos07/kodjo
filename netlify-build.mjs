@@ -96,6 +96,15 @@ try {
   fs.writeFileSync('dist/_redirects', '/*    /index.html   200');
   console.log('_redirects file created successfully');
 
+  // Copier le fichier de diagnostic
+  console.log('Copying debug file to dist/public directory...');
+  if (fs.existsSync('client/public/debug-index.html')) {
+    fs.copyFileSync('client/public/debug-index.html', 'dist/public/debug.html');
+    console.log('Debug file copied successfully');
+  } else {
+    console.log('Debug file not found');
+  }
+
   console.log('Build completed successfully!');
 } catch (error) {
   console.error('Build failed:', error);

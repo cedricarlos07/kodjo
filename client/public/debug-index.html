@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlineCoursePro - Debug</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    pre {
+      background-color: #f8f8f8;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+    .success {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>OnlineCoursePro - Page de diagnostic</h1>
+    <p>Cette page est conçue pour aider à diagnostiquer les problèmes de chargement de l'application.</p>
+    
+    <h2>Informations sur l'environnement</h2>
+    <div id="env-info"></div>
+    
+    <h2>Erreurs de console</h2>
+    <div id="console-errors">Aucune erreur détectée pour le moment...</div>
+    
+    <h2>Ressources chargées</h2>
+    <div id="resources"></div>
+    
+    <h2>Actions</h2>
+    <button id="reload-btn">Recharger la page</button>
+    <button id="clear-cache-btn">Effacer le cache et recharger</button>
+    <button id="go-to-app-btn">Aller à l'application</button>
+    
+    <script>
+      // Afficher les informations sur l'environnement
+      document.getElementById('env-info').innerHTML = `
+        <pre>
+URL: ${window.location.href}
+Protocole: ${window.location.protocol}
+Hôte: ${window.location.host}
+Chemin: ${window.location.pathname}
+User Agent: ${navigator.userAgent}
+        </pre>
+      `;
+      
+      // Capturer les erreurs de console
+      const originalConsoleError = console.error;
+      console.error = function() {
+        const errorDiv = document.getElementById('console-errors');
+        errorDiv.innerHTML = `<div class="error">Erreur détectée: ${Array.from(arguments).join(' ')}</div>`;
+        originalConsoleError.apply(console, arguments);
+      };
+      
+      // Analyser les ressources chargées
+      window.addEventListener('load', function() {
+        const resourcesDiv = document.getElementById('resources');
+        const resources = performance.getEntriesByType('resource');
+        
+        if (resources.length === 0) {
+          resourcesDiv.innerHTML = '<div class="error">Aucune ressource n\'a été chargée!</div>';
+        } else {
+          let resourcesHtml = '<ul>';
+          resources.forEach(resource => {
+            const status = resource.transferSize > 0 ? 'success' : 'error';
+            resourcesHtml += `<li class="${status}">${resource.name} (${resource.initiatorType})</li>`;
+          });
+          resourcesHtml += '</ul>';
+          resourcesDiv.innerHTML = resourcesHtml;
+        }
+      });
+      
+      // Configurer les boutons
+      document.getElementById('reload-btn').addEventListener('click', function() {
+        window.location.reload();
+      });
+      
+      document.getElementById('clear-cache-btn').addEventListener('click', function() {
+        if ('caches' in window) {
+          caches.keys().then(function(names) {
+            for (let name of names) caches.delete(name);
+          });
+        }
+        window.location.reload(true);
+      });
+      
+      document.getElementById('go-to-app-btn').addEventListener('click', function() {
+        window.location.href = '/';
+      });
+    </script>
+  </div>
+</body>
+</html>
